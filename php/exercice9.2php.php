@@ -5,13 +5,13 @@ $number=fgets(STDIN);
 if ( $number >= 90) {
     echo " tres bien ";
 }
-if($number >= 80 && $number < 90) {
+     elseif($number >= 80 && $number < 90) {
     echo " bien ";
 }
-if ($number >= 70 && $number < 80) {
+     elseif ($number >= 70 && $number < 80) {
     echo " satisfaisant ";
 }
-if ($number < 70 ) {
+     else  {
     echo "a ameliorer " ;
 }
  ?>
