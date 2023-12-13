@@ -4,6 +4,9 @@ $day = fgets(STDIN ) ;
 
 echo  " entrer un nombre correspondant au mois souhaite " ;
 $month = fgets(STDIN ) ;
+$dayInit=$day >=1 || $day <=31 ;
+
+$monthInit=$month>=1 || $month <=12 ;
 
 switch ( $month) {
     case 1 :$month= " janvier " ;
@@ -32,8 +35,8 @@ switch ( $month) {
         break;
 }
 if ( $day ) {
-    $day=" >=01 || <=31 " && $month="janvier "."mars"."mai"."juillet"."aout"."octobre"."decembre".true;
-    echo "le ".$day."du mois de ".$month."est une date qui existe";
+    $day=" >=01 || <=31 " && $month="janvier "||"mars"||"mai"||"juillet"||"aout"||"octobre"||"decembre".true;
+    echo " le ".$day."du mois de ".$month."est une date qui existe";
     }
    elseif ($day){
     $day=" >=01 || <=30 " && $month="avril"."juin"."septembre"."novembre".true ;

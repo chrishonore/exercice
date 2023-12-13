@@ -6,7 +6,9 @@
 */
 echo  " vous voulez connaitre la factorielle de quel nombre ? " ;
 $number = trim(fgets( STDIN)) ;
+// variable factorielle toujour avec un depart de 1
 $f=1;
+//variable initial=nombre ; initial superieur ou egale a 1; initial qui suit
 for ( $i=$number ; $i>=1 ; $i-- ) {
     $f=$f*$i;
 }
