@@ -1,3 +1,4 @@
+
 <?php
 // demande a l utilisateur d introduire un chiffre //
 echo"entrer un chiffre de 1 a 12 qui corresponde au mois de l annee ";
