@@ -10,4 +10,4 @@ WHERE email LIKE '%gmail.com' ;
 
 SELECT nom, prenom, email
 FROM  eleve
-WHERE not ( email LIKE '%gmail.com');
+WHERE not (email LIKE '%gmail.com');
