@@ -21,4 +21,12 @@ Reprenez la requète des élèves nés entre 1980 ET 1990.
  */
  SELECT nom, prenom , naissance
  FROM eleve
- WHERE naissance =  >='1980-01-01' AND <'1990-01-01' ;
+ WHERE naissance  >='1980-01-01' AND naissance <'1990-01-01' ;
+
+SELECT nom, prenom , naissance
+FROM eleve
+WHERE not (naissance <'1980-01-01' or naissance  >'1990-01-01' ) ;
+
+SELECT nom, prenom , naissance
+FROM eleve
+WHERE NOT (naissance  >='1980-01-01' AND naissance <'1990-01-01') ;
