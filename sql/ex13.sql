@@ -7,6 +7,10 @@ select *
 from Localite
 where cp =4280;
 
-select *
+select cp , commune
+from localite
+where cp  > '4000'and cp < '4999';
+
+select cp,Commune
 from Localite
-where cp =4280 and commune=like 'a%' and 'b%' ;
+where cp=4280 and (commune like 'a%' or commune like 'b%');
