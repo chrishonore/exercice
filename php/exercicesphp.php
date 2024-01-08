@@ -1,5 +1,5 @@
 <?php
-$age="";
+
 echo "entrer votre age";
 $age=fgets(STDIN);
 
