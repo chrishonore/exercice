@@ -9,13 +9,27 @@ while (true) {
 // demande a l utilisateur si il as des enfants
 echo " Bonjour $nom avez vous des enfants ? 
 _____________________
-| tapez 1 | = | oui |
+| tapez 1 | = | non |
 |_________|___|_____|
-| tapez 2 | = | non |
+| tapez 2 | = | oui |
 |_________|___|_____|   " ;
 $enfant=fgets(STDIN);
-// si le choix est 1 alors il as des enfants
-    if ($enfant==1 )  {
+// si le choix est 1 alors il as pas d enfants
+    if ($enfant == 1) {
+        echo "                _________________________________________________
+                | il serait temp de mettre jesus dans la creche | 
+                |_______________________________________________|\n ";
+        echo " a qui desire vous offrir un cadeau pour mettre jesus dans la creche lol ?\n
+           _______________________
+           | tapez 1 | = | femme |
+           |_________|___|_______|
+           | tapez 2 | = | homme |
+           |_________|___|_______|";
+        $FouH = fgets(STDIN);
+    }
+
+// si le choix est 2 alors il as des enfants
+    if ($enfant==2 )  {
         // demande le sexe de l enfant
         echo "quel est le sexe de votre enfant ?
        ________________________
@@ -54,15 +68,19 @@ $enfant=fgets(STDIN);
                 |__________________|___|__________________|______|
                 | tapez une lettre | = | retour !         |    
                 |__________________|___|__________________|      ";
-                $filleCad1=fgets(STDIN);
-                while  ( $filleCad1 >= 1 || $filleCad1 <= 5 ) {
+                $filleCad=fgets(STDIN);
+
+                    while  ( $filleCad >= 1 || $filleCad <= 5 ) {
                     echo " que desire vous faire :
-                    
-                          | ajouter au panier   | = | 1 | 
+                          _______________________________
+                          | ajouter au panier   | = | 1 |
+                          |_____________________|___|___| 
                           | passer a la caisse  | = | 2 |
-                          | choisir autre chose | = |3 |
+                          |_____________________|___|___|
+                          | choisir autre chose | = | 3 |
+                          |_____________________|___|___|
                           | retour au menu      | = | 4 |
-                           ";
+                          |_____________________|___|___|    ";
                     $panierBreak =fgets(STDIN);
                     if ($panierBreak==1){
                      //ajouter au panier
@@ -77,12 +95,12 @@ $enfant=fgets(STDIN);
                     // retour au menu
                     break;
                     }
-                    }
-
+                }
                 }
             }
             //si la fille as entre 6 et 12 ans
-            if ($filleAge==2){
+        if (isset($filleAge)) {
+            if  ( $filleAge == 2) {
                 echo " veuillez faire votre choix ! 
                                        ___________________________
                                        |     article      | prix |             
@@ -101,6 +119,8 @@ $enfant=fgets(STDIN);
                 |__________________|___|__________________|      ";
                 $filleCad=fgets(STDIN);
             }
+            panier();
+        }
 
             // si la fille as entre 13 et 18 ans
             if ($filleAge==3){
@@ -122,45 +142,18 @@ $enfant=fgets(STDIN);
                 |__________________|___|__________________|      ";
                 $filleCad=fgets(STDIN);
             }
+        }
+
 // par contre si le choix du cadeau  donne est une lettre alors le mzssage sera
             elseif ( !is_numeric($filleAge)){
                 echo " vous vous etes trompe cela ne sont pas des chiffres \n";
                 continue;
             }
-            else {
-                echo " veuillez reessayer merci ";
-            }
-        }
 
 
+// par contre si le sexe de l enfant  donne est une lettre alors le message sera
 
 
-
-// par contre si le sexe de l enfant  donne est une lettre alors le mzssage sera
-        elseif ( !is_numeric($filOuGar)){
-            echo " vous vous es trompe cela ne sont pteas des chiffres \n";
-            continue;
-        }
-// par contre si la donne est une lettre alors le mzssage sera
-        elseif ( !is_numeric($enfant)){
-            echo " vous vous es trompe cela ne sont pteas des chiffres \n";
-            continue;
-        }
-    }
 // si la selection de l enfant est 2 alors il as pas d enfant
-    if ($enfant==2) {
-    echo "                _________________________________________________
-                | il serait temp de mettre jesus dans la creche | 
-                |_______________________________________________|\n ";
-    echo " a qui desire vous offrir un cadeau pour mettre jesus dans la creche lol ?\n
-           _______________________
-           | tapez 1 | = | femme |
-           |_________|___|_______|
-           | tapez 2 | = | homme |
-           |_________|___|_______|";
-    $FouH =fgets(STDIN);
-}
-else {
-    echo "introduise le bon chiffre merci!\n";
-}
+
 }
