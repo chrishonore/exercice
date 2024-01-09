@@ -5,7 +5,7 @@
  */
  use blindcode2;
 
-SELECT eleve.nom, eleve.prenom,formation.nom,eleve_formation.date_inscription
+SELECT distinct eleve.nom, eleve.prenom,formation.nom,eleve_formation.date_inscription
 from eleve, formation , eleve_formation;
 /*
  dans la categorie eleve il y a key nommee 'r.n' et le 'id' et d autre info
