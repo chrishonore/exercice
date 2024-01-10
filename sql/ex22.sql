@@ -5,11 +5,19 @@ Je vous conseille d'utiliser le mot clef AS après le nom du pays et après le n
  Sinon vous allez avoir deux colonnes Name pour le pays et le continent. Ce qui n'est pas très pratique...
  */
  use pays;
+select *
+from pays limit 2;
+
+select *
+from continent ;
+
+select name
+from pays
+order by name asc;
 
 SELECT pays.name as 'name_pays', continent.name as 'name_continent'
 from pays
  inner join continent on pays.continent = continent.code ;
 
-select name
-from pays
-order by name asc;
+
+
