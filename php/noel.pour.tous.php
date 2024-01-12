@@ -70,6 +70,9 @@ $enfant=fgets(STDIN);
                 |__________________|___|__________________|      ";
                 $filleCad1=fgets(STDIN);
 
+
+
+
                     while  ( $filleCad1 >= 1 || $filleCad1 <= 5 ) {
                     echo " Que desire vous faire ? :
                           _______________________________
@@ -202,8 +205,7 @@ $enfant=fgets(STDIN);
                 }
             }
     //si le garcon as entre 6 et 12 ans
-
-        if  ( $garconAge == 2) {
+            if  ( $garconAge == 2) {
             echo " veuillez faire votre choix ! 
                                        ______________________________
                                        |     article         | prix |             
@@ -223,7 +225,7 @@ $enfant=fgets(STDIN);
             $gerconCad2=fgets(STDIN);
         }
     }
-    }
+
     // si le garcon as entre 13 et 18 ans
     if ($garconAge==3){
         echo " veuillez faire votre choix ! 
@@ -245,5 +247,5 @@ $enfant=fgets(STDIN);
                 $garconCad3=fgets(STDIN);
                  }
         }
-
+    }
 }
