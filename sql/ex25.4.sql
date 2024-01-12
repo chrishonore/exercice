@@ -1,0 +1,1 @@
+use employees;    /*    Affichez le nom du département, le nom du manager, le prénon du manager,    sa date de début et sa date de fin de fonction. (On utilisera la table dept_manager qui est la table intermédiaire entre employees et departments).     */    select departments.dept_name,employees.first_name,employees.last_name

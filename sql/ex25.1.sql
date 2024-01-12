@@ -8,17 +8,18 @@ INNER JOIN table2 ON table1.FK_Key = table2.PK_Key
  */
  use blindcode2;
 select eleve.nom,eleve.prenom,eleve.sexe , formation.nom as formation
-from eleve , formation
+from eleve
+inner join eleve_formation on eleve.id=eleve_formation.eleve_id
+inner join formation on eleve_formation.formation_id=formation.id
 ;
-select eleve_formation.formation_id as nb_eleves,formation.nom as formation
+select formation.nom as formation ,count(*) as nb_eleve
 from eleve_formation
-     INNER JOIN  formation ON eleve_formation.formation_id = formation.id
-group by eleve_formation. count (formation_id)
-
+inner join formation on eleve_formation.formation_id=formation.id
+group by formation.nom
 ;
-select eleve_formation.formation_id as nb_eleves,formation.nom as formation
+select formation.nom as formation ,count(*) as nb_eleve
 from eleve_formation
-         INNER JOIN  formation ON eleve_formation.formation_id = formation.id
-order by group by eleve_formation. count (formation_id) asc
-
+inner join formation on eleve_formation.formation_id=formation.id
+group by formation.nom
+order by nb_eleve desc
 ;
