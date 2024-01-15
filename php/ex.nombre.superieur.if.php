@@ -1,15 +1,15 @@
 <?php
-// l utilisateur introduit le premier nombre //
-echo "entrer le premier nombre ";
-// lis le premier nombre //
+// l utilisateur introduit le premier nombre
+echo " entrer le premier nombre ";
+// lis le premier nombre
 $a=fgets(STDIN);
-// l utilisateur introduit le deuxieme nombre //
+// l utilisateur introduit le deuxieme nombre
 echo " entrer le deuxieme nombre ";
-// lis le deuxieme nombre //
+// lis le deuxieme nombre
 $b=fgets(STDIN);
-// l utilisateur introduit le troisieme nombre //
+// l utilisateur introduit le troisieme nombre
 echo "entrer le troisieme nombre ";
-// lis le troisieme nombre //
+// lis le troisieme nombre
 $c=fgets(STDIN);
 // variable qui represente le nombre maximal //
 $max=$c ;

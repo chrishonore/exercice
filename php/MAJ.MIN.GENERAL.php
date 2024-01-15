@@ -7,17 +7,20 @@ $text=trim(fgets(STDIN));
 //message de bonjour
 echo "bonjour\n que desirez vous faire ? \n 1 = majuscule \n 2 = minuscule " ;
 $MajMin=trim(fgets(STDIN));
-
+// fonction qui va mettre le texte en minuscule
     function StringToUpperCase (string $_strEntry)
     {
         // calcule le nombre de fois que la fonction passe
         global $count;
         $_upperString="";
         $count ++;
+        // boucle for strlen il va prendre toute la ligne
         for ($i=0; $i<strlen($_strEntry);$i++)
         {
             $_firstChar=ord($_strEntry[$i]);
+            // dans ce cas la lettre a est le 97 et le z c est 122
             if ($_firstChar>=97 && $_firstChar<=122){
+                // pour le mettre en minuscule il faut faire -32
                 $_firstChar-=32 ;
             }
             $_firstChar=chr($_firstChar);
@@ -25,6 +28,7 @@ $MajMin=trim(fgets(STDIN));
         }
         echo $count." : ".$_upperString."\n";
     }
+    // fonction appele pour mettre en majuscule
 function StringLowerCase (string $_strEntry)
 {
     // calcule le nombre de fois que la fonction passe

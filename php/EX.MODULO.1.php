@@ -1,4 +1,3 @@
-
 <?php
 //  l utilisateur dois entrer un nombre divisible //
 echo" entrer le premier nombre " ;

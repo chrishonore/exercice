@@ -1,9 +1,9 @@
 <?php
-//  l utilisateur entre son age //
+//  l utilisateur entre son age
 echo "entrer votre age";
-// lis l age indiquee //
+// lis l age indiquee
 $age=fgets(STDIN);
-// si l age est superieur ou egale a 18 alors //
+// si l age est superieur ou egale a 18 alors 
 if ($age>=18){
     echo "vous etes majeur.";
 }
