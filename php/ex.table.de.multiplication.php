@@ -10,5 +10,4 @@ $number=trim(fgets( STDIN)) ;
 // boucle for va de 1 a 10
 for ( $i =1 ; $i<=10 ; $i ++) {
    echo $number. " x " . $i . " = ". $number*$i . "\n";
-
 }

@@ -5,8 +5,9 @@
 */
 echo " vous voulez connaitre la factorielle de quel nombre ? ";
 $number = trim(fgets(STDIN));
-
+// boucle d un nombre de 1 a 10
 while ( $number <= 1 || $number >= 10  ) {
+    // chaque nombre est calcule est multiplie par le suivant
        $number = ( 1 * 1 ) ;
     $number = ( 1 * 1 * 2 ) ;
     $number = ( 1 * 1 * 2 * 3 ) ;
