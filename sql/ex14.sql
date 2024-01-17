@@ -20,3 +20,10 @@ order by Naissance ;
 select nom,prenom , Sexe, Naissance
 from eleve
 order by Naissance desc ;
+
+select nom,prenom , Sexe, Naissance
+from eleve
+order by PRENOM ASC ;
+
+
+

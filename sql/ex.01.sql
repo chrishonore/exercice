@@ -1,6 +1,13 @@
+
 use blindcode;
-select * from eleve ;
-select * from formation ;
-select nom , prenom ,email from eleve ;
-select nom , lieu from formation ;
+    /*
+    ici l etoile veut dire tout selectionner
+     */
+SELECT * FROM eleve ;
+
+SELECT * FROM formation ;
+
+SELECT nom , prenom ,email FROM eleve ;
+
+SELECT nom , lieu FROM formation ;
 

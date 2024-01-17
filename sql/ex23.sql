@@ -7,11 +7,22 @@ table=produit avec key primaire idproduit et idcategorie suivi de nom stock et p
  */
  use ventes;
 SELECT ProduitV2.nom , categorie.nom
-from ProduitV2
-inner join categorie on ProduitV2. idcategorie = categorie.idcategorie;
+FROM ProduitV2
+INNER JOIN categorie ON ProduitV2. idcategorie = categorie.idcategorie;
 
 SELECT ProduitV2. nom , categorie. nom , prix , stock
-from ProduitV2
-inner join  categorie on ProduitV2. idcategorie = categorie.idcategorie
-order by  ProduitV2.nom asc , categorie.nom  ;
+FROM ProduitV2
+INNER JOIN categorie ON ProduitV2. idcategorie = categorie.idcategorie
+ORDER BY  ProduitV2.nom ASC , categorie.nom  ;
+
+SELECT produitv2.nom AS produit , categorie.nom AS categorie, stock , prix
+FROM categorie
+INNER JOIN produitv2 ON categorie. idcategorie = produitv2.idcategorie
+ORDER BY produitv2.stock ASC , categorie.nom;
+
+SELECT produitv2.nom AS produit , categorie.nom AS categorie, stock , prix
+FROM categorie
+         INNER JOIN produitv2 ON categorie. idcategorie = produitv2.idcategorie
+ORDER BY produitv2.prix ASC , categorie.nom;
+
 

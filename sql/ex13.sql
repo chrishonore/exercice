@@ -3,14 +3,22 @@ Affichez toutes les communes sur le code Postal 4280 et dont la commune commence
 Affichez les CP et les noms des communes de la Province de Liège: les CP sont compris entre 4000 et 4999
 */
 use Localites
-select *
-from Localite
-where cp =4280;
+SELECT *
+FROM Localite
+WHERE cp =4280;
 
-select cp , commune
-from localite
-where cp  > '4000'and cp < '4999';
+SELECT cp , commune
+FROM localite
+WHERE cp  > '4000'AND cp < '4999';
 
-select cp,Commune
-from Localite
-where cp=4280 and (commune like 'a%' or commune like 'b%');
+SELECT cp,Commune
+FROM Localite
+WHERE cp=4280 AND (commune LIKE 'a%' OR commune LIKE 'b%');
+
+SELECT cp , commune
+FROM localite
+WHERE cp > 6000 AND cp < 6999 ;
+
+SELECT cp, commune
+FROM localite
+WHERE cp > 6000 AND cp < 6999 AND (commune LIKE 'a%' OR commune LIKE 'b%');

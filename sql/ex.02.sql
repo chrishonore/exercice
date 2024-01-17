@@ -1,3 +1,8 @@
 use blindcode ;
-select nom , prenom ,email from eleve ;
-select nom , lieu from formation ;
+    /*
+    ICI ON S ENTRAINE AVEC SELECT ET FROM
+     */
+
+SELECT nom , prenom ,email FROM eleve ;
+
+SELECT nom , lieu FROM formation ;

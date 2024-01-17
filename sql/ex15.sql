@@ -18,6 +18,8 @@ select nom, prenom, naissance,year (curdate())- year (naissance) as age
 FROM eleve
 ORDER BY age DESC ;
 
-SELECT nom, prenom, naissance
+SELECT nom, prenom, naissance as age
 FROM eleve
-WHERE formation_id=2;
+WHERE naissance
+ORDER BY age desc
+;

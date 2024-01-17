@@ -18,6 +18,11 @@ order by name asc;
 SELECT pays.name as 'name_pays', continent.name as 'name_continent'
 from pays
  inner join continent on pays.continent = continent.code ;
+/* en gros on introduit le deuxieme tableau pour le mettre dans table 1
+   et il va s appeler continent qui devien une colonne que l on va
+   le relier avec = au table 2 a la colonne code qui represente sa clef primary */
+select code
+from continent;
 
 
 

@@ -21,12 +21,17 @@ Reprenez la requète des élèves nés entre 1980 ET 1990.
  */
  SELECT nom, prenom , naissance
  FROM eleve
+ /*naissance inferieur ou egale a annee et naissance inferieur a annee
+   pour rechercher entre deux date */
  WHERE naissance  >='1980-01-01' AND naissance <'1990-01-01' ;
 
 SELECT nom, prenom , naissance
 FROM eleve
-WHERE not (naissance <'1980-01-01' or naissance  >'1990-01-01' ) ;
+/* ou alors en utilisant where not on indique les date ou on ne dois pas chercher
+   on ne cherche pas quand se inferieur a 1980 ou on ne cherche pas quand se superieur a 1990 */
+WHERE NOT (naissance <'1980-01-01' OR naissance  >'1990-01-01' ) ;
 
 SELECT nom, prenom , naissance
 FROM eleve
+/*ou alors on fait de cette maniere*/
 WHERE NOT (naissance  >='1980-01-01' AND naissance <'1990-01-01') ;

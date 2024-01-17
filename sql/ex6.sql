@@ -10,3 +10,7 @@ A l'inverse, affichez les élèves qui ont un numéro de téléphone: On utilise
 SELECT nom , prenom , gsm , tel
 FROM eleve
 WHERE tel IS NOT NULL ;
+
+SELECT nom , prenom, sexe ,tel
+FROM eleve
+WHERE tel IS NULL ;

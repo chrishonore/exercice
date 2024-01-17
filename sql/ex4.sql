@@ -1,6 +1,7 @@
 use blindcode ;
     /*
     Affichez tous les élèves de Sexe Masculin ET ayant comme CP 1348
+    SELECT=selectionner from=ou where=quoi and=et
 */
 
 SELECT  nom , prenom

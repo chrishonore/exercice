@@ -10,16 +10,17 @@ INNER JOIN table2 ON table1.FK_Key = table2.PK_Key
  */
  use blindcode2;
 
-select  *
-from eleve_formation ;
+SELECT  *
+FROM eleve_formation ;
 
-SELECT distinct e.nom, e.prenom, f.nom as formation ,ef.date_inscription
-from eleve AS e
-inner join eleve_formation AS ef ON e.id = ef.eleve_id
-inner join formation AS f ON ef.formation_id = f.id;
+SELECT DISTINCT e.nom, e.prenom, f.nom AS formation ,ef.date_inscription
+FROM eleve AS e
+INNER JOIN eleve_formation AS ef ON e.id = ef.eleve_id
+INNER JOIN formation AS f ON ef.formation_id = f.id;
 
 
     /*
+ COMPRIS
  dans la categorie eleve il y a key nommee 'r.n' et le 'id' et d autre info
  dans la categorie formation  il y a key nommee 'id' avec le nom et le lieux
  dans la categorie eleve_formation  il y a key nommee ' eleve_id','formation_id' ,

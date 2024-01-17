@@ -15,3 +15,4 @@ FROM Produit;
 
 SELECT prix, stock
 FROM produit;
+/* il y a rien a ajouter lol */
