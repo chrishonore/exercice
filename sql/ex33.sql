@@ -32,5 +32,30 @@ insert into Joueur (Id_joueur,Prenom, Nom, Date_de_Naissance, Id_Equipe) values 
 insert into Joueur (Id_joueur,Prenom, Nom, Date_de_Naissance, Id_Equipe) values (30,'Céline', 'Czajkowski', '2001-03-20', 2);
 insert into Joueur (Id_joueur,Prenom, Nom, Date_de_Naissance, Id_Equipe) values (31,'Mélinda', 'Pedican', '1995-05-04', 2);
 insert into Joueur (Id_joueur,Prenom, Nom, Date_de_Naissance, Id_Equipe) values (32,'Lauréna', 'McGiffin', '1982-06-25', 1);
+
 select *
 from joueur;
+delete from joueur
+where date_de_naissance < ' 1991-01-01' and date_de_naissance > '1979-12-31';
+select *
+from joueur;
+delete from joueur
+where nom like 'm%';
+select *
+from joueur;
+delete from joueur
+where prenom like '%e';
+select *
+from joueur;
+/*
+ pour cette partie je dois effacer les id superieur a 3
+ sauf que apres avoir effacer les dates voulue
+ les nom qui commence par m et les prenom qui termine par e
+ on se rend compte que le premier id qui apparait en tete de liste et le id 8
+ et si j excecute le code dans ce cas j efface la liste complete
+ */
+delete from joueur
+where id_joueur >3;
+select *
+from joueur;
+
