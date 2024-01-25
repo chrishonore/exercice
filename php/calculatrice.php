@@ -42,7 +42,7 @@ if ($choix==3) {
 }
 if ($choix==4){
     // fonction division
-    echo " si on divise la somme de " . $_nbr1 . " par la somme " . $_nbr2 . " le resultat sera " . Division($_nbr1,$_nbr2),"\n" ;
+    echo Division($_nbr1,$_nbr2),"\n" ;
     continue;
 }
     elseif ($choix==5){
@@ -76,15 +76,18 @@ function Multiplication ( int $_nbr1,int $_nbr2): int
 }
 return;
 //fonction division
-function Division ( int $_nbr1,int $_nbr2): int
+function Division ( float $_nbr1,float $_nbr2): float
 {
-    return $_nbr1/$_nbr2;
+    if ($_nbr1<$_nbr2){
+        echo " la somme de " .$_nbr1 . " n est pas divisible par " . $_nbr2. "\n";
+    }
+    {
+       return $_nbr1/$_nbr2;
+    }
 }
-return;
-// fonction modulo juste pour le fun ha ha ha 
+// fonction modulo juste pour le fun ha ha ha
 function Modulo ( int $_nbr1,int $_nbr2): int
 {
-    return $_nbr1%$_nbr2;
+    return  $_nbr1%$_nbr2;
 }
-return;
-
+    ?>
