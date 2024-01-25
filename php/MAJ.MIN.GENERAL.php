@@ -8,6 +8,7 @@ $text=trim(fgets(STDIN));
 echo "bonjour\n que desirez vous faire ? \n 1 = majuscule \n 2 = minuscule " ;
 $MajMin=trim(fgets(STDIN));
 // fonction qui va mettre le texte en minuscule
+
     function StringToUpperCase (string $_strEntry)
     {
         // calcule le nombre de fois que la fonction passe

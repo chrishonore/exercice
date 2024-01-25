@@ -1,4 +1,11 @@
-<?php
+
+
+
+
+
+
+
+.<?php
 // variable predefinie 1 //
 $name1= "
 _______

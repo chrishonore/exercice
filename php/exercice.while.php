@@ -8,10 +8,11 @@ while ( $n1 >= 0 ) {
     $n2 = fgets (STDIN ) ;
     $somme2=($n2+$somme);
         echo $somme . " + " . $n2 . " = " . $somme2 ;
+    if (!is_numeric($n2)) {
+        echo " ceci n est pas un chiffre ! ";
+        echo " la somme est " .$somme2 ;
+        return;
+    }
 }
-while (!is_numeric($n2)) {
-    echo " ceci n est pas un chiffre ! ";
-    echo " la somme est " .$somme2 ;
-    return;
-}
+
 
