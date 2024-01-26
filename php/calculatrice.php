@@ -1,5 +1,5 @@
 <?php
-declare ( strict_types=1);
+declare (strict_types=1);
 echo " entrer le premier nombre ";
 $_nbr1=intval( trim(fgets(STDIN)));
 if (!is_numeric($_nbr1))  {
@@ -14,12 +14,29 @@ if (!is_numeric($_nbr2))  {
 }
 while (true) {
 echo " que desirez vous faire avec " .$_nbr1 . " et " . $_nbr2 ." ? \n ";
-echo "      1 pour additionner
+echo "      0 pour choisir d autre nombre     
+       1 pour additionner
        2 pour soustraire 
        3 pour multiplier 
        4 pour diviser
         5 pour modulo  ";
 $choix=trim(fgets(STDIN));
+if ($choix==0) {
+    echo " entrer le premier nombre ";
+    $_nbr1=intval( trim(fgets(STDIN)));
+    if (!is_numeric($_nbr1))  {
+        echo " ceci n est pas un chiffre \n bye bye "  ;
+        return;
+    }
+    echo " entrer le deuxieme nombre ";
+    $_nbr2=intval( trim(fgets(STDIN)));
+    if (!is_numeric($_nbr2))  {
+        echo " ceci n est pas un chiffre \n bye bye "  ;
+        return;
+    }
+
+
+}
 if (!is_numeric($choix))  {
     echo " ceci n est pas un chiffre \n bye bye "  ;
     return;
@@ -42,7 +59,7 @@ if ($choix==3) {
 }
 if ($choix==4){
     // fonction division
-    echo Division($_nbr1,$_nbr2),"\n" ;
+    echo " si on divise la somme de ".$_nbr1." a la somme de ". $_nbr2. "le resultat sera " . Division($_nbr1,$_nbr2),"\n" ;
     continue;
 }
     elseif ($choix==5){
@@ -78,10 +95,11 @@ return;
 //fonction division
 function Division ( float $_nbr1,float $_nbr2): float
 {
-    if ($_nbr1<$_nbr2){
+    if ($_nbr2==0){
         echo " la somme de " .$_nbr1 . " n est pas divisible par " . $_nbr2. "\n";
+        return 0 ;
     }
-    {
+   else {
        return $_nbr1/$_nbr2;
     }
 }
