@@ -88,5 +88,24 @@ Question("Question 14 :\n Quel est le premier personnage créer par walt disney?
 Question("Question 15 :\n Comment s'appelle le crabe dans la petite sirène?\n",
     "1 = Polochon\n2 = Belle\n3 = Sébastien\n4 = Esteban",
     3);
+Question( "Thème faune et flore\n
+Question 16 :\n Comment s'appelle la femelle du sanglier?\n",
+    "1 = la sangliere \n2 = la laie\n3 = la truie\n4 = la cochonne(Amir)",
+    2);
 
+Question( "Question 17 :\n De quel famille fait partie le saule pleureur?\n",
+    "1 = Salicaceae\n2 = Feuillus\n3 = Coniferes\n4 = Lianes",
+    1);
+
+Question( "Question 18:\n Quel est l'intrus parmi ses familles?\n",
+    "1 = strepsipteres\n2 = trichopteres\n3 = lepiadopteres\n4 = anseriformes",
+    4);
+
+Question( "Question 19:\n Où se trouve les paletuviers?\n",
+    "1 = Dans les mangroves\n2 = Dans La savane\n3 = Dans le désert\n4 = En Amazonie",
+    1);
+
+Question( "Question 20:\n quelle est la papaveracée commune des champs de céréales ?\n",
+    "1 = le bleuet\n2 = le coquelicot\n3 = le trèfles\n4 = la rose",
+    1);
 echo " bravo vous avez repondu a toute les question votre score est de " . $score;
