@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr-be" xmlns="http://www.w3.org/1999/html">
+<head >
+    <meta charset="UTF-8">
+    <meta name="description" content="this is an accessible form">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title> Formulaire de reservation </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<header>
+    <h1> Formulaire Reservation </h1>
+</header>
+<fieldset>
+    <legend> information du client </legend>
+    <div class="text-field">
+        <label for="nom"> votre nom </label>
+        <input type="text" name="nom" id="nom" required>
+        <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+        <label for="prenom"> votre prenom </label>
+        <input type="text" name="prenom" id="prenom" required>
+        <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+        <label for="email"> votre email </label>
+        <input type="email" name="email" id="email" required>
+        <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+        <label for="numero">Votre numero </label>
+        <input type="number" name="numero" id="numero" required>
+        <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+        <label for="date" > Date de naissance </label>
+        <input type="date" name="date" id="date">
+        <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+
+    </div>
+</fieldset>
+<fieldset>
+    <legend>a consommer</legend>
+    <div class=" submit-button-field">
+        <input type="button" name="place" value="p" id="place">
+        <label for="place">sur place </label>
+        <input type="button" name="emporter" value="E" id="emporter">
+        <label for="emporter">a emporter </label>
+        <input type="button" name="livraison" value="L" id="livraison">
+        <label for="livraison" > livraison </label>
+    </div>
+</fieldset>
+<fieldset>
+    <legend> Adresse de livraison </legend>
+    <div class="text-field">
+        <label for="commune"> Commune </label>
+        <input type="text" name="commune" id="commune" required>
+        <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+        <label for="cp"> Code postal </label>
+        <input type="number" name="cp" id="cp" required>
+        <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+        <label for="rue"> nom de la rue </label>
+        <input type="text" name="rue" id="rue" required>
+        <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+        <label for="num"> numero de maison </label>
+        <input type="number" name="num" id="num" required>
+        <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+        <label for="app"> numero de l appartement </label>
+        <input type="number" name="app" id="app" required>
+        <span style="color: red;">*</span><br><span> Champ obligatoire si vous etes en appartement </span> <br>
+    </div>
+</fieldset>
+<fieldset>
+<legend> menu </legend>
+<div class="radio-field">
+    <h2>  entree  </h2>
+    <label for="entree"> entree </label>
+    <select name="entree" id="entree" role="listbox">
+        <optgroup label="entree" role="group">
+            <option value="noix de st jacques" role="option">noix de st jacques</option>
+            <option value="terrine de canard" role="option">terrine de canard</option>
+            <option value="creme de marron" role="option">creme de marron</option>
+        </optgroup>
+
+
+        <h2> plat principal </h2>
+        <label for="plat"> plat </label>
+        <select name="plat" id="plat" role="listbox">
+            <optgroup label="plat" role="group">
+                <option value="espadon grille" role="option">espadon grille</option>
+                <option value="poulet roti" role="option">poulet roti </option>
+                <option value="entrecote" role="option">entrecote</option>
+            </optgroup>
+</fieldset>
+</html>

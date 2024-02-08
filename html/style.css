@@ -1,0 +1,30 @@
+body {
+    font-family: 'Partridge', sans-serif;
+    background-image:url("harry.potter.jpg");
+    background-size: cover;
+    font-size:26px ;
+}
+main {;
+
+    padding-top: 01rem;
+    padding-bottom: 33rem;
+    text-align: center;
+    background-image: url("parchemin.gif");
+    background-repeat: no-repeat;
+    background-size: 50rem 80rem;
+    float:right;
+    width: 50rem;
+    height: 50rem;
+
+}
+legend{
+
+    font-family: 'Partridge', sans-serif;
+}
+fieldset{
+    border: none;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    bu
+}
+

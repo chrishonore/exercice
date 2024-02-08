@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr-be" xmlns="">
+<head >
+    <meta charset="UTF-8">
+    <meta name="description" content="this is an accessible form">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title> Formulaire </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS v5.3 -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Font Awesome 6.4.2 -->
+    <link href="https://fonts.cdnfonts.com/css/partridge-2" rel="stylesheet">
+<style>
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] ,
+    input[type="submit"],
+    input[type="number"],
+    select[role="listbox"],
+    select[id="heure"],
+    select[id="minutes"]{
+        background-color: transparent;
+        border: 1px solid black;
+        margin: 5px;
+    }
+</style>
+   <style>
+       input[type="submit"]{
+           margin-right: 3rem;
+       }
+   </style>
+</head>
+
+<header>
+
+</header>
+<main>
+    <h2 style="color: red ">Formulaire d inscription</h2>
+<form action="exercice.formulaire.html" method="post">
+<fieldset>
+       <legend style="color: firebrick"> Tes information </legend>
+       <div class="text-field">
+           <label for="nom"> votre nom </label>
+           <input type="text" name="nom" id="nom"  aria-describedby="instruction-nom" required>
+           <span id="instruction-nom" class="sr-only"> </span>
+          <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+
+           <label for="prenom"> votre prenom </label>
+           <input type="text" name="prenom" id="prenom" required>
+           <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+
+           <label for="email"> votre email </label>
+           <input type="email" name="email" id="email" required>
+           <span style="color: red;">*</span><span> Champ obligatoire </span> <br>
+
+           <label for="pays"> votre pays </label>
+           <select name="pays" id="pays" role="listbox">
+               <optgroup label="Europe" role="group">
+                   <option value="BE" role="option">Belgique</option>
+                   <option value="FR" role="option">France</option>
+                   <option value="DE" role="option">Allemagne</option>
+               </optgroup>
+               <optgroup label="Asie" role="group">
+                   <option value="JP" role="option">Japon</option>
+                   <option value="CN" role="option">Chine</option>
+               </optgroup>
+               <optgroup label="Amerique" role="group">
+                   <option value="CN" role="option">Canada</option>
+                   <option value="MX" role="option">Mexique</option>
+               </optgroup>
+
+           </select><br>
+           <label for="date" > Date de naissance </label>
+           <input type="date" name="date" id="date"><br>
+           <label for="CarteIdentite">carte d identite </label>
+           <input type="file" name="CarteIdentite" id="CarteIdentite" accept="pdf,jpg">
+       </div>
+   </fieldset>
+<fieldset>
+    <legend style="color: firebrick"> point d interets</legend>
+    <div class="check-field">
+        <input type="checkbox" name="sport" id="sport" >
+        <label for="sport"> sport</label>
+        <input type="checkbox" name="cuisine" id="cuisine">
+        <label for="cuisine"> cuisine</label> <br>
+        <input type="checkbox" name="relaxation" id="relaxation">
+        <label for="relaxation"> relaxation</label>
+        <input type="checkbox" name="voyage" id="voyage">
+        <label for="voyage"> voyage</label>
+    </div>
+</fieldset>
+<fieldset>
+    <legend style="color: firebrick">newsletters</legend>
+    <div class="radio-field">
+        <input type="radio" name="newletter" value="W" id="week-end">
+        <label for="week-end"> weekend</label>
+        <input type="radio" name="newletter" value="M" id="mois">
+        <label for="mois">mensuel</label>
+        <input type="radio" name="newletter" value="MMM" id="trimestrielle">
+        <label for="trimestrielle" >trimestrielle </label>
+    </div>
+</fieldset>
+<fieldset>
+        <legend style="color: firebrick">choix de l abonnement</legend>
+        <div class="number-field">
+            <label for="duree">duree de l abonnement</label>
+            <input type="number" step="1" min="3" max="12"  name="duree" id="duree">
+        </div>
+</fieldset>
+<fieldset>
+    <legend style="color: firebrick">Heure et minutes de reception</legend>
+        <div class="time-field">
+            <label for="heure">choisir l heure de reception :</label>
+            <select id="heure" name="heure">
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+        </select><br>
+            <label for="minutes">choisir la minute de reception :</label>
+            <select id="minutes" name="minutes">
+                <option value="00">00</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select><br>
+            </div>
+ </fieldset>
+<fieldset>
+        <div>
+            <input type="submit" value="je m abonne ">
+
+</div>
+    </fieldset>
+</form>
+</main>
+</html>
+
