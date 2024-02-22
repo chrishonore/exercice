@@ -2,12 +2,13 @@ use localites;
 --Quelle est la commune ayant la plus petite Latitude ?
 select *
 from localite
-where latitude
 order by latitude asc
-limit 3;
+limit 1;
 --ou alors on peut faire comme cela
-select min(latitude),cp, commune
-from localite;
+SELECT L.Commune, L.Latitude
+FROM Localite L
+WHERE L.Latitude = (SELECT MIN(Latitude) FROM Localite)
+ORDER BY L.Latitude ASC;
 --Quelle est la plus grande Longitude sur le CP 1000 ?
 select max(longitude),cp, commune
 from localite
