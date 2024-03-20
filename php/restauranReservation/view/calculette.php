@@ -85,7 +85,7 @@ if (isset($_GET['nombre1']) && isset($_GET['choix']) && isset($_GET['nombre2']))
         }
 
         // Affichez le résultat dans le terminal
-        echo "\nRésultat : " . $resultat;
+        echo "\n Résultat : " . $resultat;
     } else {
         echo 'Veuillez renseigner tous les champs.';
     }

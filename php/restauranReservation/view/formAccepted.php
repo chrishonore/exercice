@@ -33,7 +33,14 @@
 include '../include/header.php';
 ?>
 <main>
-    <p> formulaire bien envoier </p>
+    <?php
+    if (isset($_POST['envoyer'])) {
+        // Le bouton "Envoyer" a été cliqué
+        echo "Formulaire soumis avec succès !";
+        // Autres traitements ici...
+    }
+    ?>
+
 </main>
 <?php
 include '../include/footer.php';
