@@ -6,7 +6,7 @@ $compteur = 0;
 $score = 5;
 $scoretotal = 100;
 
-$reponseAll= ;
+$reponseAll=" " ;
 $joker1 = false; // Variable pour suivre si le joker a été utilisé
 
 // Fonction pour afficher une question avec des options
@@ -56,4 +56,3 @@ function Question($q, $option, $joker1, $reponse)
 Question("Thème 1 Le football \nQuestion 1 :\n Comment s'appelle la règle qui interdit de toucher la balle avec les mains ? \n",
     "1 = Hors jeux \n2 = Faute \n3 = Pas touche la mouche\n4 = WALA j ai pas touché",
     "50/50",2);
-

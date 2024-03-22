@@ -35,7 +35,7 @@ include '../include/header.php';
 <main>
     <h1 style="color: red"> Formulaire Reservation </h1>
     <!-- formulaire donnee client et mode de consommation-->
-    <form action="./ValidateReservationForm.php" method="post">
+    <form action="./traitement.php" method="post">
         <div class="row border-solid-primary"  style="background-color: antiquewhite;padding-top: 35px">
             <div class="text-field">
                 <h1 style="line-height: normal"> information du client </h1>
@@ -65,7 +65,7 @@ include '../include/header.php';
             </div>
     </form>
     <!--sur plade-->
-    <form id="place" style="display: none" action="#" method="post">
+    <form id="place" style="display: none" method="post">
         <div style="background-color: antiquewhite;padding-top: 35px">
             <h2> sur place </h2>
             <div class="time-field">
@@ -240,7 +240,7 @@ include '../include/header.php';
         </div>
     </form>
     <!-- livraison-->
-    <form id="livraison" action="#" method="post" style="display: none">
+    <form id="livraison"  method="post" style="display: none">
         <div class="row border-solid-primary"  style="background-color: antiquewhite">
             <h2> livraison </h2>
             <div class="text-field">
