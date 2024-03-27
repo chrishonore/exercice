@@ -1,0 +1,8 @@
+form{
+    display: block;
+   margin: auto;
+    border: 1rem solid black;
+    width: 15rem;
+    height: 15rem;
+    text-color: red;
+}
